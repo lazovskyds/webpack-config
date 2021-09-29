@@ -1,0 +1,9 @@
+npm i --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript babel-loader clean-webpack-plugin copy-webpack-plugin cross-env css-loader eslint-loader file-loader html-webpack-plugin mini-css-extract-plugin optimize-css-assets-webpack-plugin@5.0.3 sass-loader style-loader terser-webpack-plugin webpack webpack-cli webpack-dev-server webpack-bundle-analyzer
+npm i --save @babel/polyfill
+
+"scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "start": "cross-env NODE_ENV=development webpack serve",
+},
